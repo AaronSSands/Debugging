@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<!-- had to add open and close html as well as doctype-->
+<head>
+    <title>Joe's Grill - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="DebuggedUnit8.css">
+    <!--Title and link to css was missing had to add as well as head closing-->
+    <!--un needed <br> tags-->
+</head>
+<body>
+<header>
+    <img src="images/logo.jpg" alt="Joe's Grill logo" width="150" height="150">
+    <!--I do not have original images!!-->
+    <h1>Contact Joe's Grill!</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href=aboutus.html>About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="nutrition">Nutrition</a></li>
+        <li><a href="chef.html">Chef</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <!--Had to fix spelling and add closing tags and fix = signs-->
+        <!--i do not have original folders to this web page-->
+    </ul>
+    </nav>
+<!--NAV was not closed properly-->
+        <main>
+            <h2>Contact Us</h2>
+                <p>Email:<br>
+                    <a href="mailto:joesgrill@mail.com">joesgrill@mail.com</a></p>
+                <p>Address:<br>
+                    123 Our St<br>
+                    Geneva-on-the-Lake, OH 44444</p>
+                <p>Phone:<br>
+                    (440)-555-5555</p>
+                <br>
+                <h3>Tell Us What You Think:</h3>
+                <form action="" method="post" autocomplete="on">
+                    <!--method was empty-->
+                    <select name="prefix" id="select-one">
+                        <!--fixed option without value and added the missing id-->
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="ms">Ms.</option>
+                    </select>
+                    <br>
+                    <!--<br> tags in incorrect spots-->
+                    <label>First Name:
+                    <input type="text" name="firstname" required>
+                    </label>
+                    <br>
+                    <label>Last Name:
+                    <input type="text" name="lastname">
+                        </label>
+                    <br>
+                    <label>Email:
+                    <input type="email" name="email" autocomplete="off" required>
+                    </label>
+                    <br>
+                    <label>Telephone:
+                    <input type="tel" name="phone">
+                    </label>
+                    <br>
+                    <label>Date:
+                    <input type="date" value="2019-07-30" min="2019-01-01" max="2019-12-31">
+                    </label>
+                    <!--Date was missing value and its min and max values as well-->
+                    <!-- lots of missing <br> tags as well s tons of typos and missing values-->
+                    <h4>Enter your four-digit passcode, then click OK:</h4>
+                    <!--h2 tag added when there already was one changed to h4-->
+                    <input id="id1" type="number" min="1000" max="9999" required>
+                    <button onclick="myFunction()">OK</button>
+                    <p id=passcode"></p>
+                    <script>
+                        function myFunction() {
+                            var inpObj = document.getElementById("id1");
+                            if (inpObj.checkValidity() == false) {
+                                document.getElementById("passcode").innerHTML =
+                                    inpObj.validationMessage;
+                            } else {
+                                document.getElementById("passcode").innerHTML = "Passcode Valid";
+                            }
+                        }
+                    </script>
+                    <!--script tag line was clean no issues-->
+                    <h5>Gender:</h5>
+                    <!-- wrong h tag again used h3 changed to h5-->
+                    <label>
+                    <input type="radio" name="male"> Male
+                    </label>
+                    <br>
+                        <label>
+                    <input type="radio" name="female"> Female
+                        </label>
+                    <!-- no label tags and wrong br tags used incorrectly-->
+                    <!--values used incorrectly-->
+                    <p><b>Select your favorites at Joe's Grill</b>
+                        <br><i>Check all that apply</i></p>
+                    <label>
+                        <input type="checkbox" name="favorites">Chicken
+                    </label>
+                    <br>
+                    <label>
+                    <input type="checkbox" name="favorites">Cheeseburgers
+                    </label>
+                    <br>
+                    <label>
+                    <input type="checkbox" name="favorites">French fries
+                    </label>
+                    <br>
+                    <label>
+                    <input type="checkbox" name="favorites">Deserts
+                    </label>
+                    <!--to many br tags used, values use wrong, and no label tags were used-->
+                    <br>
+                    <p>Comments:</p>
+                    <textarea rows="10" cols="30"></textarea>
+                    <br>
+                    <input type="checkbox" name="newsletter" value="subscribe">Subscribe to our Newsletter
+                    <br>
+                    <label>
+                    <input type="reset" value="Reset Form">
+                    </label>
+                    <br>
+                    <label>
+                    <input type="submit" value="Submit Form">
+                    </label>
+                </form>
+        </main>
+        <footer></footer>
+</body>
+</html>

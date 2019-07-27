@@ -1,0 +1,24 @@
+form {
+    background-color: #999999;
+    color= #000000;
+    padding: 5px;
+    width: 90%
+    border-radius: 20px;
+}
+textarea {
+    background-color: #999999;
+    color: #000000
+    border: 1px solid #800000;
+}
+input {
+    border: 1px solid #800000;
+}
+input[type="email: "] {
+    backround-color: 999999;
+}
+input[type=number] {
+    background-color; #800000;
+    color: #ffffff;
+label {
+    color: #000000;
+}

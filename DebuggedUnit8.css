@@ -1,0 +1,31 @@
+form {
+    background-color: #999999;
+    color: #000000;
+    /* used equal sign instead of colon*/
+    padding: 5px;
+    width: 90%;
+    /* no semi colon used to end statement*/
+    border-radius: 20px;
+}
+textarea {
+    background-color: #999999;
+    color: #000000;
+    /* no semi colon used to end statement*/
+    border: 1px solid #800000;
+}
+input {
+    border: 1px solid #800000;
+}
+input[type="email: "] {
+    background-color: #999999;
+    /*background spelled wrong causing errors*/
+}
+input[type=number] {
+    background-color: #800000;
+    /* semi colon used instead of colon after background-color*/
+    color: #ffffff;
+}
+/* no closing tag was used to close of the input type number section*/
+label {
+    color: #000000;
+}
